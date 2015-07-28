@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página de Exemplo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Cadastro de Usuários</h2>
+		<div class="form-group">
+			<label for="nome">Nome:</label> <input type="text"
+				class="form-control" id="nome" placeholder="Digite o nome" required>
+		</div>
+		<div class="form-group">
+			<label for="cpf">CPF:</label> <input type="number"
+				class="form-control" id="cpf" placeholder="Digite o CPF" required>
+		</div>
+		<div class="form-group">
+			<label for="nasc">Data de nascimento:</label> <input type="text"
+				class="form-control" id="nasc"
+				placeholder="Digite a data de nascimento (dd/MM/yyyy)">
+		</div>
+		<div class="form-group">
+			<label for="endereco">Endereço:</label> <input type="text"
+				class="form-control" id="endereco"
+				placeholder="Digite o endereco (Rua, Av., etc. + numero e/ou complemento)">
+		</div>
+		<div class="form-group">
+			<label for="bairro">Bairro:</label> <input type="text"
+				class="form-control" id="bairro" placeholder="Digite o bairro">
+		</div>
+		<div class="form-group">
+			<label for="cidade">Cidade:</label> <input type="text"
+				class="form-control" id="cidade" placeholder="Digite a cidade">
+		</div>
+		<div class="form-group">
+			<label for="estado">Estado:</label> <select class="form-control"
+				id="estado">
+				<option>Selecione um estado</option>
+				<option>Rio de Janeiro</option>
+				<option>São Paulo</option>
+				<option>Minas Gerais</option>
+				<option>Acre</option>
+				<option>Rio Grande do Sul</option>
+				<option>Santa Catarina</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="infos">Informações adicionais:</label> <input type="text"
+				class="form-control" id="infos"
+				placeholder="Digite informações adicionais">
+		</div>
+		<div class="form-group">
+			<button type="submit" id="btn-submit" onclick="exibeMsg()"
+				class="btn btn-default">Submit</button>
+		</div>
+		<div class="alert alert-success" role="alert" id="msgSucesso" hidden>
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <span
+				class="sr-only">Sucesso:</span> Usuário cadastrado com sucesso
+		</div>
+	</div>
+
+	<script>
+		function exibeMsg() {
+			msgSucesso = document.getElementById("msgSucesso");
+			msgSucesso.removeAttribute("hidden");
+		}
+	</script>
+
+</body>
+</html>
