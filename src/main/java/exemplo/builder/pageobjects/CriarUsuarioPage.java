@@ -1,4 +1,4 @@
-package exemplo.pageobjects;
+package exemplo.builder.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
