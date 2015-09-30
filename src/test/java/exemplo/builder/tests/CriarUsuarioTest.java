@@ -1,11 +1,11 @@
-package tests;
+package exemplo.builder.tests;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import exemplo.pageobjects.CriarUsuarioPage;
+import exemplo.builder.pageobjects.CriarUsuarioPage;
 
 public class CriarUsuarioTest extends BaseTest
 {
@@ -18,7 +18,7 @@ public class CriarUsuarioTest extends BaseTest
 	}
 	
 	@Test
-	public void criarUsuarioSomenteComCamposObrigatorios() throws InterruptedException
+	public void criarUsuarioSomenteComCamposObrigatorios()
 	{
 		new CriarUsuarioPage.CriarUsuarioFormBuilder(driver, "Admin", "11145678906").submit();
 		

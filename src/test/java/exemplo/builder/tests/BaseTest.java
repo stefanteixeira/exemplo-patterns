@@ -1,4 +1,4 @@
-package tests;
+package exemplo.builder.tests;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package exemplo.pageobjects;
+package exemplo.builder.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+
+import exemplo.builder.usuario.Usuario;
 
 public class CriarUsuarioPage extends BasePage
 {
@@ -89,5 +91,17 @@ public class CriarUsuarioPage extends BasePage
 		{
 			this.driver.findElement(By.id(elementId)).sendKeys(text);
 		}
+	}
+	
+	public Usuario getUsuario()
+	{
+		return new Usuario.UsuarioBuilder("Dollynho", "11133344409")
+			.dataNascimento("01/09/1979")
+			.endereco("Rua do Amiguinho, 1000")
+			.bairro("Guaranalandia")
+			.cidade("Guaranazinho do Sul")
+			.estado("Acre")
+			.informacoes("Cuidado com o sol!")
+			.build();
 	}
 }
