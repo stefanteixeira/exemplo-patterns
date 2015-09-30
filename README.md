@@ -4,3 +4,4 @@ Este repositório contém exemplos de código utilizados na série de posts "Des
 
 Partes publicadas:
 - Parte 1: Builder e Fluent Interfaces - http://goo.gl/C2CgzA
+- Parte 2: StepBuilder - http://goo.gl/5oA1Va
