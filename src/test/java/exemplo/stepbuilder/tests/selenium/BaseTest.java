@@ -1,4 +1,4 @@
-package exemplo.builder.tests;
+package exemplo.stepbuilder.tests.selenium;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +19,7 @@ public abstract class BaseTest
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		File testpage = new File("src/test/resources/testpage.html");
+		File testpage = new File("src/test/resources/testpage2.html");
 		driver.get("file://" + testpage.getAbsolutePath());
 	}
 

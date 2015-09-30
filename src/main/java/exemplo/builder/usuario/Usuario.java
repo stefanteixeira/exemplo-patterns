@@ -15,6 +15,11 @@ public class Usuario
 	private String estado;
 	private String informacoes;
 	
+	public String getNome()
+	{
+		return nome;
+	}
+	
 	private Usuario(UsuarioBuilder builder)
 	{
 		this.nome = builder.nome;

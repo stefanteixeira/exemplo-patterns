@@ -51,6 +51,7 @@ public class UsuarioStepBuilder
 		
 		public CpfStep nome(String nome)
 		{
+			usuario = new Usuario();
 			usuario.setNome(nome);
 			return this;
 		}

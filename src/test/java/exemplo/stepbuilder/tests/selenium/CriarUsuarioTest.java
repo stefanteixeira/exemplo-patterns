@@ -1,4 +1,4 @@
-package exemplo.stepbuilder.tests;
+package exemplo.stepbuilder.tests.selenium;
 
 import static org.junit.Assert.assertTrue;
 
