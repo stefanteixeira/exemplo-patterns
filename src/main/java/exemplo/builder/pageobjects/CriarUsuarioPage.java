@@ -92,16 +92,4 @@ public class CriarUsuarioPage extends BasePage
 			this.driver.findElement(By.id(elementId)).sendKeys(text);
 		}
 	}
-	
-	public Usuario getUsuario()
-	{
-		return new Usuario.UsuarioBuilder("Dollynho", "11133344409")
-			.dataNascimento("01/09/1979")
-			.endereco("Rua do Amiguinho, 1000")
-			.bairro("Guaranalandia")
-			.cidade("Guaranazinho do Sul")
-			.estado("Acre")
-			.informacoes("Cuidado com o sol!")
-			.build();
-	}
 }
